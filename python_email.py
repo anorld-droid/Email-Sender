@@ -23,6 +23,7 @@ def send_email(myemail, password):
     toemail = input("Enter recipients email: ")
     message = input("Enter the message: ")
     emailObj.sendmail(myemail, toemail, message)
+    emailObj.quit()
 
 
 if __name__ == "__main__":
